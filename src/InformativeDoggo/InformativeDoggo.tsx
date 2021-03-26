@@ -1,15 +1,20 @@
 import Doggo from "../Doggo/Doggo";
 import { useState } from "react"
-type IDoggoProps = { Doggo: typeof Doggo };
 
-const InformativeDoggo = (dog: IDoggoProps) => {
-    const [image, setImage] = useState<string>(dog.Doggo.prototype.img);
+type InfoDoggoProps = { img: string, statusCode: string, statusText: string, description: string };
+const InformativeDoggo = (dog: InfoDoggoProps) => {
+
+    const [image, setImage] = useState<string>(dog.img);
 
     return (
-        <div className="Info-doggo">
-            <img src={image}></img>
-            <div id="status">
-                <span id="description"></span>
+        <div className="container">
+            <div className="Info-doggo">
+                <img src={image}></img>
+                <div id="status">{dog.statusCode + ` ` + dog.statusText}
+                    <br>
+                        <span id="description">{dog.description}</span>
+                    </br>
+                </div>
             </div>
         </div>
     )

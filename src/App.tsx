@@ -2,26 +2,21 @@ import React from 'react';
 import images from './Doggo/mapImages';
 import logo from './assets/logo.png';
 import './App.css';
-import getDoggoCode from './helpers/getDogCode'
 import Doggo from './Doggo/Doggo';
 import readCodes from './helpers/getCodeMeaning';
-
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 function App() {
 
   const listItems = Object.values(images);
-  const codes = readCodes();
-  console.log(codes);
+  const doges = readCodes();
+  console.log(doges);
 
   const dogs = listItems.map((dog, index) => {
-    let code = getDoggoCode(dog);
-    let meaning = codes[index];
-    console.log(meaning);
-
+    let model = doges[index];
+    console.log(model);
 
     console.log(dog);
-    if (code.match(/^\d+$/)) {
-      return <Doggo img={dog} statusCode={code} statusText={meaning.phrase} key={dog}></Doggo>
-    }
+    return <Doggo img={dog} statusCode={model.statusCode} statusText={model.statusText} description={model.description} key={dog}></Doggo>
   });
 
   return (
@@ -32,7 +27,9 @@ function App() {
         <hr className="solid"></hr>
         <span>All your status codes in one place, click on doggo to find explanation.</span>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20, width: "80%" }}>
-          {dogs}
+          <BrowserRouter>
+            {dogs}
+          </BrowserRouter>
         </div>
         <a
           className="App-link"
