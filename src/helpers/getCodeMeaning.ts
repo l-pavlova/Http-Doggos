@@ -1,8 +1,6 @@
-import fs from 'fs'
+import codes from './stats.json'
 
 export default function readCodes() {
-    fs.readFile('./statusCodes.txt', 'utf8', function (err, buffer) {
-        console.log("buffer")
-        console.log(buffer)
-    });
+    
+    return codes
 }

@@ -9,13 +9,18 @@ import readCodes from './helpers/getCodeMeaning';
 function App() {
 
   const listItems = Object.values(images);
-  //readCodes();
-  //const codes = readCodes();
+  const codes = readCodes();
+  console.log(codes);
+  
   const dogs = listItems.map((dog, index) => {
     let code = getDoggoCode(dog);
+    let meaning = codes[index];
+    console.log(meaning);
+    
+    
     console.log(dog);
     if(code.match(/^\d+$/)){
-        return <Doggo img={dog} statusCode={code} statusText="vey informative text here" key={dog}></Doggo>
+        return <Doggo img={dog} statusCode={code} statusText={meaning.phrase} key={dog}></Doggo>
     } 
   });
 
