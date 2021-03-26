@@ -1,21 +1,28 @@
 import './Doggo.css'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { useState } from 'react';
+
+import { RouteWithProps } from '../helpers/routerWithProps'
+import React, { useState } from 'react';
 import InformativeDoggo from '../InformativeDoggo/InformativeDoggo'
-type DoggoProps = { img: string, statusCode:string,  statusText:string, description:string};
+import DoggoModel from '../helpers/doggoModel';
+type DoggoProps = { img: string, statusCode: string, statusText: string, description: string };
 
 const Doggo = ({ img, statusCode, statusText, description }: DoggoProps) => {
     const [image, setImage] = useState<string>(img);
 
     return (
         <div className="doggo">
-            <img src={image}></img>
+            <div className="dog-img">
+                <img src={image}></img>
+            </div>
             <div id="status">
-            <h4><Route path={'/' + statusCode} component={InformativeDoggo}/>{statusCode}</h4>
-            <p>{statusText}</p>
+                <a href={'/' + statusCode}>{statusCode}</a>
+                <p>{statusText}</p>
             </div>
         </div>
+
     )
 }
 
 export default Doggo;
+ //<RouteWithProps path={'/' + statusCode} component={InformativeDoggo} componentProps={{ image, statusCode, statusText, description}}/>{statusCode}
+ //<h4>{statusCode}</h4>

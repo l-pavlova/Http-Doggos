@@ -16,8 +16,9 @@ function App() {
     console.log(model);
 
     console.log(dog);
-    return <Doggo img={dog} statusCode={model.statusCode} statusText={model.statusText} description={model.description} key={dog}></Doggo>
-  });
+    return (
+    <Doggo img={dog} statusCode={model.statusCode} statusText={model.statusText} description={model.description} key={dog}></Doggo>
+  )});
 
   return (
     <div className="App">
@@ -27,9 +28,7 @@ function App() {
         <hr className="solid"></hr>
         <span>All your status codes in one place, click on doggo to find explanation.</span>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20, width: "80%" }}>
-          <BrowserRouter>
             {dogs}
-          </BrowserRouter>
         </div>
         <a
           className="App-link"

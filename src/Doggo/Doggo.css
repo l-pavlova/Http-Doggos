@@ -1,6 +1,7 @@
 .doggo {
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
+   border-bottom: 0mm;
   }
   
   .doggo:hover {
@@ -9,26 +10,28 @@
   
   .container {
     padding: 2px 2px;
-    bottom: 0px;
  }
-
+.dog-img{
+  height: 75%;
+}
 img {
-     padding-top: 10%;
-      width:60%;
-      height: 50%;
-      object-fit: cover;
+    
+      padding-top: 10%;
+      width:50%;
+      height: auto;
+      align-self: stretch;
+
   }
   #status {
-    border: none;
-    outline: 0;
-    display:inline-block;
-    flex-grow:1;
+    padding: 12px 0;
     color: rgb(0, 0, 0);
     background-color: rgb(37, 102, 104);
     text-align: center;
     cursor: pointer;
     width: 100%;
+    height:fit-content;
     font-size: 18px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
   }
  
