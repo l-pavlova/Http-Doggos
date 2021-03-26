@@ -9,6 +9,7 @@
   
   .container {
     padding: 2px 2px;
+    bottom: 0px;
  }
 
 img {
@@ -20,12 +21,14 @@ img {
   #status {
     border: none;
     outline: 0;
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    background-color: rgb(35, 120, 177);
+    display:inline-block;
+    flex-grow:1;
+    color: rgb(0, 0, 0);
+    background-color: rgb(37, 102, 104);
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
  

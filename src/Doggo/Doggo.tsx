@@ -12,7 +12,7 @@ const Doggo = ({ img, statusCode, statusText }: DoggoProps) => {
             <div id="status">
             <h4><b><a
             className="App-link"
-            href="https://reactjs.org"
+            href={'/' + statusCode}
             target="_blank">{statusCode}</a></b></h4>
             <p>{statusText}</p>
             </div>

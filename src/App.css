@@ -8,6 +8,8 @@
 }
 
 #logo {
+  margin-top: 0%;
+  padding-top: 0%;
   width: 20%;
 }
 
@@ -31,6 +33,13 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Nav {
+  width:100%;
+  height:40px;
+  color: #000d11;
+  background-color: cadetblue;
 }
 
 @keyframes App-logo-spin {
