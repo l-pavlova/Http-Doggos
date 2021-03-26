@@ -4,7 +4,6 @@ import logo from './assets/logo.png';
 import './App.css';
 import Doggo from './Doggo/Doggo';
 import readCodes from './helpers/getCodeMeaning';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
 function App() {
 
   const listItems = Object.values(images);
