@@ -1,9 +1,6 @@
 import './Doggo.css'
+import {useState} from 'react';
 
-import { RouteWithProps } from '../helpers/routerWithProps'
-import React, { useState } from 'react';
-import InformativeDoggo from '../InformativeDoggo/InformativeDoggo'
-import DoggoModel from '../helpers/doggoModel';
 type DoggoProps = { img: string, statusCode: string, statusText: string, description: string };
 
 const Doggo = ({ img, statusCode, statusText, description }: DoggoProps) => {

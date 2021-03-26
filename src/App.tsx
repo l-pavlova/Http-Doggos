@@ -1,4 +1,3 @@
-import React from 'react';
 import images from './Doggo/mapImages';
 import logo from './assets/logo.png';
 import './App.css';
