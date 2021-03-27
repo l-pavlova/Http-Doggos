@@ -55,14 +55,14 @@ img {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-@media screen and (min-width: 321px) and (max-width: 500px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   .footer {
     background: rgb(37, 102, 104);
     color: rgb(0, 0, 0);
     text-align: center;
     cursor: pointer;
     margin-bottom: 0vh;
-    height: 10vh;
+    height: 12vh;
     color:#fff;
     position:relative;
     line-height:100%;
