@@ -1,18 +1,17 @@
 import readCodes from "../helpers/getCodeMeaning";
-import images from '../Doggo/mapImages';
+import getImages from '../Doggo/mapImages';
 import './InformativeDoggo.css'
 const InformativeDoggo = (dog: any) => {
 
-    const imgs = [];
-    const vals = Object.values(images);
-    for (let val of vals) {
-        imgs.push(val);
-    }
-    const code = (dog.location.pathname).substr(1, 3);
+    const imgs: any[] = getImages();
+
+    const code:string = (dog.location.pathname).substr(1, 3);
     const doge = imgs.filter(i => i.includes(code))[0];
     console.log('in');
     console.log(code);
     const doggo = readCodes().filter(o => o.statusCode == code)[0];
+    console.log(doge);
+    
     return (
         <div className="container">
             <div className="Info-doggo">

@@ -2,8 +2,12 @@
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    transition: 0.3s;
    border-bottom: 0mm;
+   text-decoration-color: black;
+   text-emphasis-color: black;
   }
-  
+  a {
+    color: black;
+  }
   .doggo:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
  }
@@ -29,7 +33,6 @@ img {
     text-align: center;
     cursor: pointer;
     width: 100%;
-    height:fit-content;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
