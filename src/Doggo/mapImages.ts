@@ -40,6 +40,10 @@ import an from "../assets/doggos/doggo501.jpg"
 import ao from "../assets/doggos/doggo502.jpg"
 import ap from "../assets/doggos/doggo503.jpg"
 import aq from "../assets/doggos/doggo504.jpg"
+import ar from "../assets/doggos/doggo505.jpg"
+import as from "../assets/doggos/doggo506.jpg"
+import at from "../assets/doggos/doggo507.jpg"
+import au from "../assets/doggos/doggo511.jpg"
 
 const images = {
     a,
@@ -77,12 +81,17 @@ const images = {
     ah,
     ai,
     aj,
+    al,
     ak,
     am,
     an,
     ao,
     ap,
     aq,
+    ar,
+    as,
+    at,
+    au,
 }
 
 function getImages() {
