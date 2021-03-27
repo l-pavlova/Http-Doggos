@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: fit-content;
 }
 
 .App-logo {
@@ -21,7 +22,9 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  padding-bottom: 0vh;
+  margin-bottom: 0vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +44,17 @@
   color: #000d11;
   background-color: cadetblue;
 }
-
+@media screen and (min-width: 321px) and (max-width: 500px) {
+  .Nav {
+    width: 100vh;
+  }
+  .App-header {
+    background-color: #282c34;
+    padding-bottom: 0vh;
+    margin-bottom: 0vh;
+    width:  100vh;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

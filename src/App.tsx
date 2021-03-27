@@ -37,7 +37,7 @@ function App() {
         <h1><img src={logo} id="logo"></img>Http dogs!</h1>
         <hr className="solid"></hr>
         <span>All your status codes in one place, click on doggo to find explanation.</span>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20, width: "80%", margin: 10 }}>
+        <div className="grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: "10vh 5vh", width: "80%", margin: 10 }}>
             {dogs}
         </div>
         

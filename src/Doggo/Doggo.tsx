@@ -10,9 +10,10 @@ const Doggo = ({ img, statusCode, statusText, description }: DoggoProps) => {
         <div className="doggo">
             <div className="dog-img">
                 <img src={image}></img>
+               
             </div>
-            <div id="status">
-                <a href={'/' + statusCode}>{statusCode}</a>
+            <div className="footer">
+            <a href={'/' + statusCode}>{statusCode}</a>
                 <p>{statusText}</p>
             </div>
         </div>

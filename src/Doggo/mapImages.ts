@@ -15,7 +15,31 @@ import n from "../assets/doggos/doggo302.jpg"
 import o from "../assets/doggos/doggo303.jpg"
 import p from "../assets/doggos/doggo304.jpg"
 import q from "../assets/doggos/doggo307.jpg"
-import r from "../assets/doggos/doggo307.jpg"
+import r from "../assets/doggos/doggo400.jpg"
+import s from "../assets/doggos/doggo401.jpg"
+import t from "../assets/doggos/doggo402.jpg"
+import u from "../assets/doggos/doggo403.jpg"
+import v from "../assets/doggos/doggo404.jpg"
+import x from "../assets/doggos/doggo405.jpg"
+import y from "../assets/doggos/doggo406.jpg"
+import z from "../assets/doggos/doggo407.jpg"
+import aa from "../assets/doggos/doggo408.jpg"
+import ab from "../assets/doggos/doggo409.jpg"
+import ac from "../assets/doggos/doggo410.jpg"
+import ad from "../assets/doggos/doggo411.jpg"
+import ae from "../assets/doggos/doggo412.jpg"
+import af from "../assets/doggos/doggo413.jpg"
+import ag from "../assets/doggos/doggo414.jpg"
+import ah from "../assets/doggos/doggo415.jpg"
+import ai from "../assets/doggos/doggo416.jpg"
+import aj from "../assets/doggos/doggo417.jpg"
+import ak from "../assets/doggos/doggo418.jpg"
+import al from "../assets/doggos/doggo426.jpg"
+import am from "../assets/doggos/doggo500.jpg"
+import an from "../assets/doggos/doggo501.jpg"
+import ao from "../assets/doggos/doggo502.jpg"
+import ap from "../assets/doggos/doggo503.jpg"
+import aq from "../assets/doggos/doggo504.jpg"
 
 const images = {
     a,
@@ -34,7 +58,31 @@ const images = {
     n,
     o,
     p,
-    q
+    q,
+    r,
+    s,
+    t,
+    u,
+    v,
+    x,
+    y,
+    z,
+    aa,
+    ab,
+    ac,
+    ad,
+    ae,
+    af,
+    ag,
+    ah,
+    ai,
+    aj,
+   ak,
+    am,
+    an,
+    ao,
+    ap,
+    aq,
 }
 
 function getImages() {
